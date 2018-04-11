@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        function binarySearch(min, max, value) {
+            var middle = Math.floor((min + max) / 2);
+            console.log(middle);
+            while (middle !== value && min < max) {
+                if (value < middle) {
+                    max = middle - 1
+                } else {
+                    min = middle + 1
+                }
+                middle = Math.floor((min + max) / 2);
+                console.log(middle);
+            }
+
+            return middle;
+        };
+        binarySearch(0, 100, 10);
+
+    </script>
+</body>
+
+</html>
