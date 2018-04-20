@@ -1,5 +1,5 @@
 function reversedString(stringParam) {
-    result = stringParam.split('');
+    var result = stringParam.split('');
     result = result.reverse();
     return result.join('');
 }
